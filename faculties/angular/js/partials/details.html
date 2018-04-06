@@ -1,0 +1,188 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12 mt-3">
+          <div class="card" style="background-color: whitesmoke">
+            <div class="card-header d-flex align-items-start justify-content-between">
+              <h1 class="card-title my-0">{{artists[whichItem].name}}</h1>
+              <nav class="btn-group" >
+                <a class="btn btn-sm " 
+                  href="#/details/{{prevItem}}" >&lt;</a>
+                <a class="btn btn-sm" 
+                  href="#/">&bull;</a>
+                <a class="btn btn-sm" 
+                  href="#/details/{{nextItem}}">&gt;</a>
+              </nav>
+            </div>
+            <div class="card-body"
+              ng-model="artists">
+              <h4 class="card-title text-dark mt-0">{{artists[whichItem].reknown}}</h4>
+              <img class="float-left mr-2 rounded"
+                ng-src="images/{{artists[whichItem].shortname}}_tn.jpg"
+                alt="Photo of {{artists[whichItem].name}}" style="height: 170px; width: 200px">
+              <div class="card-text">
+                  <b> Date Of Joining:</b> {{artists[whichItem].DateOfJoining}}
+                  <br>
+                  <b>Email:</b> {{artists[whichItem].Email}}
+                  <br>
+                  <b>Experiance in NMAMIT:</b> {{artists[whichItem].ExperianceNMAMIT}}
+                  <br>
+                  <b>Experiance Outside NMAMIT:</b> <br>
+                  <b>Industry:</b> {{artists[whichItem].ExperianceIndustry}}<br>
+                  <b>Teaching:</b> {{artists[whichItem].ExperianceTeaching}}<br>
+                  <b> Research:</b> {{artists[whichItem].ExperianceResearch}}<br>
+                  <br>
+                  <b>Qualification:</b>
+                  <div class="container">
+                     <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Degree</th>
+                            <th>Class Obtained</th>
+                            <th>University</th>
+                            <th>year Of passing</th>
+                            <th>Name Of the college</th>
+                            <th>Specialization</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{artists[whichItem].Degree1}}</td>
+                            <td>{{artists[whichItem].ClassObtained1}}</td>
+                            <td>{{artists[whichItem].University1}}</td>
+                            <td>{{artists[whichItem].yearOfpassing1}}</td>
+                            <td>{{artists[whichItem].NameOfthecollege1}}</td>
+                            <td>{{artists[whichItem].Specialization1}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].Degree2}}</td>
+                            <td>{{artists[whichItem].ClassObtained2}}</td>
+                            <td>{{artists[whichItem].University2}}</td>
+                            <td>{{artists[whichItem].yearOfpassing2}}</td>
+                            <td>{{artists[whichItem].NameOfthecollege2}}</td>
+                            <td>{{artists[whichItem].Specialization2}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].Degree3}}</td>
+                            <td>{{artists[whichItem].ClassObtained3}}</td>
+                            <td>{{artists[whichItem].University3}}</td>
+                            <td>{{artists[whichItem].yearOfpassing3}}</td>
+                            <td>{{artists[whichItem].NameOfthecollege3}}</td>
+                            <td>{{artists[whichItem].Specialization3}}</td>
+                          </tr>
+                            <tr>
+                            <td>{{artists[whichItem].Degree4}}</td>
+                            <td>{{artists[whichItem].ClassObtained4}}</td>
+                            <td>{{artists[whichItem].University4}}</td>
+                            <td>{{artists[whichItem].yearOfpassing4}}</td>
+                            <td>{{artists[whichItem].NameOfthecollege4}}</td>
+                            <td>{{artists[whichItem].Specialization4}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                     </div>
+                    </div>
+                   
+                  <br>
+                   <div class="container">
+                     <b>Number of paper presented during last 3 years</b><br>
+                       <b>National</b>:{{artists[whichItem].NationalPaper}}     <br>
+                       <b>International</b>:{{artists[whichItem].InternationalPaper}} <br>
+                      <div class="table-responsive">
+                      <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>sl.no</th>
+                            <th>Paper Title</th>
+                            <th>Published in</th>
+                            <th>Month and year</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{artists[whichItem].SlNo1}}</td>
+                            <td>{{artists[whichItem].PaperTitle1}}</td>
+                            <td>{{artists[whichItem].PublishedIn1}}</td>
+                            <td>{{artists[whichItem].MonthYear1}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNo2}}</td>
+                            <td>{{artists[whichItem].PaperTitle2}}</td>
+                            <td>{{artists[whichItem].PublishedIn2}}</td>
+                            <td>{{artists[whichItem].MonthYear2}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNo3}}</td>
+                            <td>{{artists[whichItem].PaperTitle3}}</td>
+                            <td>{{artists[whichItem].PublishedIn3}}</td>
+                            <td>{{artists[whichItem].MonthYear3}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNo4}}</td>
+                            <td>{{artists[whichItem].PaperTitle4}}</td>
+                            <td>{{artists[whichItem].PublishedIn4}}</td>
+                            <td>{{artists[whichItem].MonthYear4}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNo5}}</td>
+                            <td>{{artists[whichItem].PaperTitle5}}</td>
+                            <td>{{artists[whichItem].PublishedIn5}}</td>
+                            <td>{{artists[whichItem].MonthYear5}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNo6}}</td>
+                            <td>{{artists[whichItem].PaperTitle6}}</td>
+                            <td>{{artists[whichItem].PublishedIn6}}</td>
+                            <td>{{artists[whichItem].MonthYear6}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                          </div>
+                          </div>
+                    </div>
+                    <b>No. of workshops/seminars/short term training programmes attended during last 3 years</b><br>
+                    <b>National:</b>{{artists[whichItem].NationalWorkshop}}<br>
+                    <b>International:</b>{{artists[whichItem].InternationalWorkshop}}<br>
+                  
+                  <div class="container">
+                     
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>sl.no</th>
+                            <th>Course Name </th>
+                            <th>Dates</th>
+                            
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{artists[whichItem].SlNum1}}</td>
+                            <td>{{artists[whichItem].CourseName1}}</td>
+                            <td>{{artists[whichItem].Dates1}}</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNum2}}</td>
+                            <td>{{artists[whichItem].CourseName2}}</td>
+                            <td>{{artists[whichItem].Dates2}}</td>
+                          </tr>
+                          <tr>
+                            <td>{{artists[whichItem].SlNum3}}</td>
+                            <td>{{artists[whichItem].CourseName3}}</td>
+                            <td>{{artists[whichItem].Dates3}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  <br>
+                  {{artists[whichItem].bio}}
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
